@@ -1,0 +1,11 @@
+# Visual Studio / Archivos temporales y caché
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Archivos de entorno o claves locales
+*.env
