@@ -11,23 +11,23 @@ namespace The_Dining_Philosophers
     {
         public List<Philosopher> Philosophers = new List<Philosopher>();
         public List<Fork> Forks = new List<Fork>();
-        public Table(int num) 
+        public Table(int num)
         {
-            for(int i  = 0; i < num; i++)
+            for (int i = 0; i < num; i++)
             {
                 Fork f = new Fork(i);
                 Forks.Add(f);
             }
-            for(int i = 0; i < num; i++)
+            for (int i = 0; i < num; i++)
             {
-                if(i==0)
+                if (i == 0)
                 {
                     Philosopher p = new Philosopher(i, Forks[num - 1], Forks[i]);
                     Philosophers.Add(p);
                 }
                 else
                 {
-                    Philosopher p = new Philosopher(i, Forks[i], Forks[i-1]);
+                    Philosopher p = new Philosopher(i, Forks[i], Forks[i - 1]);
                     Philosophers.Add(p);
                 }
             }

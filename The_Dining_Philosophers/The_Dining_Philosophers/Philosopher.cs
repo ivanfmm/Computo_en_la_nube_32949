@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace The_Dining_Philosophers
 {
-    //pick, put, eat, think
+    pick, put, eat, think
     internal class Philosopher
     {
         public int id { get; }
@@ -35,11 +35,11 @@ namespace The_Dining_Philosophers
             this.rightHand = rightFork;
         }
 
-       public void think()
-       {
+        public void think()
+        {
             Console.WriteLine($"Philosopher {this.id} is thinking");
             Thread.Sleep(_random.Next(minThink, maxThink) * time);
-       }
+        }
         public void eat()
         {
             Console.WriteLine($"Philosopher {this.id} is eating");

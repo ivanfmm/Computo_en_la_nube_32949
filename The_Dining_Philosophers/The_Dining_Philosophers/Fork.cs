@@ -29,4 +29,3 @@ namespace The_Dining_Philosophers
         }
     }
 }
-//Thread.Sleep(random.Next(minMs, maxMs))
