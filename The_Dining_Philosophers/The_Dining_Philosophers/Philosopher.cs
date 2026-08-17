@@ -7,7 +7,6 @@ using System.Threading.Tasks;
 
 namespace The_Dining_Philosophers
 {
-    pick, put, eat, think
     internal class Philosopher
     {
         public int id { get; }
